@@ -7,7 +7,7 @@ import os,sys
 #Input
 trainNum = input("Enter the 5-digit train number: ") 
 
-if(len(trainNum)!=5):
+if(len(trainNum)!=5 or trainNum.isdigit()==False):
 	sys.exit('Invalid Train Number!!')
 
 #working url for scraping train route
