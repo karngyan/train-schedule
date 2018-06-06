@@ -7,7 +7,17 @@ This is my solution to the [Git-Heat Week-1 Problem](https://github.com/ietbitme
 
 - trainSchedule.py is a web scraper written in Python3
 - Modules/packages used: requests, BeautifulSoup4
-- To run the file, go to the command line and enter: python trainSchedule.py
+- To run the file, go to the command line and enter: **python trainSchedule.py**
+
+#####Getting Started
+
+>[Installing Python3](https://www.commonlounge.com/discussion/59b4cc482d6c4ebab9c3653cce230955)
+
+The **requests** module doesn’t come with Python, so you’ll have to install it first. From the command line, run **pip install requests**
+
+The BeautifulSoup module’s name is **bs4** (for Beautiful Soup, version 4). To install it, you will need to run **pip install beautifulsoup4** from the command line.
+
+
 
 
 
