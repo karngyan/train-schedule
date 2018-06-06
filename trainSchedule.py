@@ -11,7 +11,7 @@ if(len(trainNum)!=5):
 	sys.exit('Invalid Train Number!!')
 
 #working url for scraping train route
-url = 'http://enquiry.indianrail.gov.in/xyzabc/ShowTrainSchedule?trainNo='+trainNum 
+url = f'http://enquiry.indianrail.gov.in/xyzabc/ShowTrainSchedule?trainNo={trainNum}'
 os.makedirs('trains',exist_ok=True) #store .json in ./trains
 
 res=requests.get(url)
@@ -74,7 +74,7 @@ for row in table:
 
 
 # JSON File
-with open('./trains/' + trainNum + '.json', 'w') as outfile:
+with open(f'./trains/{trainNum}.json', 'w') as outfile:
     json.dump(schedule, outfile)
 
 
