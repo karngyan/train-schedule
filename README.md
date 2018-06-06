@@ -9,7 +9,7 @@ This is my solution to the [Git-Heat Week-1 Problem](https://github.com/ietbitme
 - Modules/packages used: requests, BeautifulSoup4
 - To run the file, go to the command line and enter: **python trainSchedule.py**
 
-#####Getting Started
+##### Getting Started
 
 >[Installing Python3](https://www.commonlounge.com/discussion/59b4cc482d6c4ebab9c3653cce230955)
 
