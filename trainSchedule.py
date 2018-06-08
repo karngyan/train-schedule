@@ -1,5 +1,5 @@
 #! python3
-#trainSchedule.py - Creates a JSON file of route of the train from train number
+#trainSchedule.py - Creates a JSON and EXCEL file of route of the train from train number
 
 import requests,bs4,json
 import os,sys
