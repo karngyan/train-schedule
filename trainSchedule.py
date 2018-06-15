@@ -43,6 +43,9 @@ schedule = [
 	}
 ] 
 
+print('Fetching Train Schedule ... ')
+
+
 #Scrape the Route table
 table=soup.select('tbody tbody tr')
 
@@ -75,6 +78,7 @@ for row in table:
 	schedule.append(rowData)
 
 
+print('Generating JSON File ... ')
 ## JSON File
 with open(f'./trains/{trainNum}/{trainNum}.json', 'w') as outfile:
     json.dump(schedule, outfile)
@@ -88,7 +92,7 @@ try:
 except OSError:
 	pass
 
-
+print('Generating .XLSX File ... ')
 #open workbook, add a sheet
 workbook = xlsxwriter.Workbook(f'./trains/{trainNum}/{trainNum}.xlsx')
 worksheet = workbook.add_worksheet(f'{trainName}')
